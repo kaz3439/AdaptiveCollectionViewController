@@ -25,12 +25,6 @@ class AdaptiveCollectionViewTableLayout: UICollectionViewFlowLayout {
     let cellSpace = CGFloat(0.5)
     let cellHeight = CGFloat(100.0)
     
-    override func prepareLayout() {
-        self.minimumLineSpacing = cellSpace
-        self.minimumInteritemSpacing = cellSpace
-        self.estimatedItemSize.height = cellHeight
-    }
-    
     override var estimatedItemSize: CGSize {
         get {
             let eistimatedSize = super.estimatedItemSize
@@ -43,6 +37,12 @@ class AdaptiveCollectionViewTableLayout: UICollectionViewFlowLayout {
         set {
             super.estimatedItemSize = newValue
         }
+    }
+    
+    override func prepareLayout() {
+        self.minimumLineSpacing = cellSpace
+        self.minimumInteritemSpacing = cellSpace
+        self.estimatedItemSize.height = cellHeight
     }
     
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
