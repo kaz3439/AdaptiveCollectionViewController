@@ -2,7 +2,7 @@
 //  AdaptiveCollectionViewTests.swift
 //  AdaptiveCollectionViewTests
 //
-//  Created by Kazuhiro Hayashi on 6/14/15.
+//  Created by Kazuhiro Hayashi on 6/15/15.
 //  Copyright © 2015 Kazuhiro Hayashi. All rights reserved.
 //
 

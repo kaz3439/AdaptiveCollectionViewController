@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6E8035661B2DC5FF0014E380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8035651B2DC5FF0014E380 /* AppDelegate.swift */; };
-		6E8035681B2DC5FF0014E380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8035671B2DC5FF0014E380 /* ViewController.swift */; };
 		6E80356B1B2DC5FF0014E380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E8035691B2DC5FF0014E380 /* Main.storyboard */; };
 		6E80356E1B2DC5FF0014E380 /* AdaptiveCollectionView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E80356C1B2DC5FF0014E380 /* AdaptiveCollectionView.xcdatamodeld */; };
 		6E8035701B2DC5FF0014E380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E80356F1B2DC5FF0014E380 /* Assets.xcassets */; };
 		6E8035731B2DC5FF0014E380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E8035711B2DC5FF0014E380 /* LaunchScreen.storyboard */; };
 		6E80357E1B2DC5FF0014E380 /* AdaptiveCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E80357D1B2DC5FF0014E380 /* AdaptiveCollectionViewTests.swift */; };
 		6E8035891B2DC5FF0014E380 /* AdaptiveCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8035881B2DC5FF0014E380 /* AdaptiveCollectionViewUITests.swift */; };
+		6E8035971B2DC64F0014E380 /* AdaptiveCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8035961B2DC64F0014E380 /* AdaptiveCollectionViewController.swift */; };
+		6E8035991B2DC6A90014E380 /* AdaptiveCollectionViewTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8035981B2DC6A90014E380 /* AdaptiveCollectionViewTableLayout.swift */; };
+		6E80359B1B2DC6D10014E380 /* AdaptiveCollectionViewGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E80359A1B2DC6D10014E380 /* AdaptiveCollectionViewGridLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		6E8035621B2DC5FF0014E380 /* AdaptiveCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8035651B2DC5FF0014E380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E8035671B2DC5FF0014E380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E80356A1B2DC5FF0014E380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E80356D1B2DC5FF0014E380 /* AdaptiveCollectionView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdaptiveCollectionView.xcdatamodel; sourceTree = "<group>"; };
 		6E80356F1B2DC5FF0014E380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		6E8035841B2DC5FF0014E380 /* AdaptiveCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdaptiveCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8035881B2DC5FF0014E380 /* AdaptiveCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveCollectionViewUITests.swift; sourceTree = "<group>"; };
 		6E80358A1B2DC5FF0014E380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E8035961B2DC64F0014E380 /* AdaptiveCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveCollectionViewController.swift; sourceTree = "<group>"; };
+		6E8035981B2DC6A90014E380 /* AdaptiveCollectionViewTableLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveCollectionViewTableLayout.swift; sourceTree = "<group>"; };
+		6E80359A1B2DC6D10014E380 /* AdaptiveCollectionViewGridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveCollectionViewGridLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				6E8035651B2DC5FF0014E380 /* AppDelegate.swift */,
-				6E8035671B2DC5FF0014E380 /* ViewController.swift */,
 				6E8035691B2DC5FF0014E380 /* Main.storyboard */,
+				6E8035961B2DC64F0014E380 /* AdaptiveCollectionViewController.swift */,
+				6E8035981B2DC6A90014E380 /* AdaptiveCollectionViewTableLayout.swift */,
+				6E80359A1B2DC6D10014E380 /* AdaptiveCollectionViewGridLayout.swift */,
 				6E80356F1B2DC5FF0014E380 /* Assets.xcassets */,
 				6E8035711B2DC5FF0014E380 /* LaunchScreen.storyboard */,
 				6E8035741B2DC5FF0014E380 /* Info.plist */,
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E8035681B2DC5FF0014E380 /* ViewController.swift in Sources */,
 				6E80356E1B2DC5FF0014E380 /* AdaptiveCollectionView.xcdatamodeld in Sources */,
+				6E8035991B2DC6A90014E380 /* AdaptiveCollectionViewTableLayout.swift in Sources */,
+				6E8035971B2DC64F0014E380 /* AdaptiveCollectionViewController.swift in Sources */,
+				6E80359B1B2DC6D10014E380 /* AdaptiveCollectionViewGridLayout.swift in Sources */,
 				6E8035661B2DC5FF0014E380 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kazuhiro.hayashi.AdaptiveCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -415,6 +424,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kazuhiro.hayashi.AdaptiveCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
