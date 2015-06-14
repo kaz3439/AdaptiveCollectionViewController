@@ -10,18 +10,18 @@ import UIKit
 
 class AdaptiveCollectionViewTableLayout: UICollectionViewFlowLayout {
     enum DisplayMode {
-        case Grid
-        case List
+        case OneColumn
+        case TwoCloumns
         
         func estimatedWidth(width: CGFloat, space: CGFloat) -> CGFloat {
             switch self {
-            case List: return width
-            case Grid: return width / 2.0 - space
+            case OneColumn: return width
+            case TwoCloumns: return width / 2.0 - space
             }
         }
     }
     
-    let displayMode: DisplayMode = UIDevice.currentDevice().userInterfaceIdiom == .Pad ? .Grid : .List
+    let displayMode: DisplayMode = UIDevice.currentDevice().userInterfaceIdiom == .Pad ? .TwoCloumns : .OneColumn
     let cellSpace = CGFloat(0.5)
     let cellHeight = CGFloat(100.0)
     
